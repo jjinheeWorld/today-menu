@@ -1,0 +1,136 @@
+@charset 'utf-8';
+
+/* 서체 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+
+/* reset */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {font-size:16px; font-weight: 400;}
+h1, h2, h3, h4, h5, h6, body, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {margin:0; padding:0;}
+li {list-style:none;}
+a {text-decoration: none;}
+
+/* 위치 */
+.locationName {
+  background-color: #202124;
+  text-align: center;
+  line-height: 80px;
+  height: 80px;
+}
+.locationName > h2 {
+  color: #fff;
+}
+
+/* 날씨 */
+.weatherInfo {
+  background-color: #61C2D3;
+  border-radius: 40px;
+  width: 50%;
+  min-width: 350px;
+  height: 180px;
+  margin: 25px auto;
+}
+.weatherInfo > h3 {
+  font-size: 0;
+}
+.weatherInfo > .weather {
+  position: relative;
+  color: #fff;
+  text-align: right;
+  height: 180px;
+  background: url(../images/weather/sun.svg) no-repeat 15% center/ 180px;
+}
+.weatherInfo > .weather > h4 {
+  position: absolute;
+  left: 65%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 35px;
+}
+.weatherInfo > .weather > h4:first-child {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 16px;
+  top: 30%;
+  transform: translate(0, -30%);
+}
+.weatherInfo > .weather > p {
+  position: absolute;
+  left: 65%;
+  bottom: 20%;
+  transform: translate(0, -20%);
+}
+
+/* 미세먼지 */
+.pmInfo {
+  background-color: #367CE4;
+  border-radius: 40px;
+  width: 50%;
+  min-width: 350px;
+  height: 180px;
+  margin: 25px auto;
+}
+.pmInfo > h3 {
+  font-size: 0;
+}
+.pmInfo > .pm {
+  position: relative;
+  color: #fff;
+  text-align: right;
+  height: 180px;
+  background: url(../images/emoji/very-good.svg) no-repeat 25% center/ 120px ;
+}
+.pmInfo > .pm > h4 {
+  position: absolute;
+  left: 65%;
+  top: 35%;
+  transform: translate(0, -35%);
+  font-size: 35px;
+}
+.pmInfo > .pm > p {
+  position: absolute;
+  left: 65%;
+  bottom: 25%;
+  transform: translate(0, -25%);
+}
+
+/* 메뉴 추천 */
+.today-menu {
+  background-color: #FFD10B;
+  border-radius: 40px;
+  width: 50%;
+  min-width: 350px;
+  height: 180px;
+  margin: 25px auto;
+  padding: 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.today-menu > h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.today-menu > button {
+  border-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  transition: all 0.2s linear;
+}
+  .today-menu > button:hover {
+  transform: scale(1.1);
+  }
+
+/* ~ 767 */
+@media screen and (max-width: 767px) {
+}
+/* 768 ~ 989 */
+@media screen and (min-width: 768px) and (max-width: 989px) {
+}
+/* 990~ */
+@media screen and (min-width: 990px) {
+}
