@@ -16,18 +16,18 @@ li {list-style:none;}
 a {text-decoration: none;}
 
 /* 위치 */
-.locationName {
+.location-name {
   background-color: #202124;
   text-align: center;
   line-height: 80px;
   height: 80px;
 }
-.locationName > h2 {
+.location-name > h2 {
   color: #fff;
 }
 
 /* 날씨 */
-.weatherInfo {
+.weather-info {
   background-color: #61C2D3;
   border-radius: 40px;
   width: 50%;
@@ -35,30 +35,30 @@ a {text-decoration: none;}
   height: 180px;
   margin: 25px auto;
 }
-.weatherInfo > h3 {
+.weather-info > h3 {
   font-size: 0;
 }
-.weatherInfo > .weather {
+.weather-info > .weather {
   position: relative;
   color: #fff;
   text-align: right;
   height: 180px;
   background: url(../images/weather/sun.svg) no-repeat 15% center/ 180px;
 }
-.weatherInfo > .weather > h4 {
+.weather-info > .weather > h4 {
   position: absolute;
   left: 65%;
   top: 50%;
   transform: translate(0, -50%);
   font-size: 35px;
 }
-.weatherInfo > .weather > h4:first-child {
+.weather-info > .weather > h4:first-child {
   font-family: 'Nanum Myeongjo', serif;
   font-size: 16px;
   top: 30%;
   transform: translate(0, -30%);
 }
-.weatherInfo > .weather > p {
+.weather-info > .weather > p {
   position: absolute;
   left: 65%;
   bottom: 20%;
@@ -66,7 +66,7 @@ a {text-decoration: none;}
 }
 
 /* 미세먼지 */
-.pmInfo {
+.pm-info {
   background-color: #367CE4;
   border-radius: 40px;
   width: 50%;
@@ -74,24 +74,24 @@ a {text-decoration: none;}
   height: 180px;
   margin: 25px auto;
 }
-.pmInfo > h3 {
+.pm-info > h3 {
   font-size: 0;
 }
-.pmInfo > .pm {
+.pm-info > .pm {
   position: relative;
   color: #fff;
   text-align: right;
   height: 180px;
   background: url(../images/emoji/very-good.svg) no-repeat 25% center/ 120px ;
 }
-.pmInfo > .pm > h4 {
+.pm-info > .pm > h4 {
   position: absolute;
   left: 65%;
   top: 35%;
   transform: translate(0, -35%);
   font-size: 35px;
 }
-.pmInfo > .pm > p {
+.pm-info > .pm > p {
   position: absolute;
   left: 65%;
   bottom: 25%;
@@ -151,23 +151,23 @@ a {text-decoration: none;}
   }
 
   /* 위치 */
-  .locationName {
+  .location-name {
     border-radius: 25px; 
   }
 
   /* 날씨 & 미세먼지 */
-  .locationInfo {
+  .location-info {
     display: flex;
   }
 
   /* 날씨 */
-  .weatherInfo {
+  .weather-info {
     min-width: 180px;
     margin-right: 5%;
   }
 
   /* 미세먼지 */
-  .pmInfo {
+  .pm-info {
     min-width: 180px;
   }
 
@@ -197,32 +197,32 @@ a {text-decoration: none;}
   }
 
   /* 위치 */
-  .locationName {
+  .location-name {
     border-radius: 25px; 
   }
-  .locationName > h2 {
+  .location-name > h2 {
     font-size: 18px;
   }
 
   /* 날씨 & 미세먼지 */
-  .locationInfo {
+  .location-info {
     display: flex;
   }
 
   /* 날씨 */
-  .weatherInfo {
+  .weather-info {
     min-width: 180px;
     height: 250px;
     margin-right: 5%;
     text-align: center;
   }
-  .weatherInfo > h3 {
+  .weather-info > h3 {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 25px;
     color: #fff;
     margin: 15px 0;
   }
-  .weatherInfo > .weather {
+  .weather-info > .weather {
     border-radius: 25px; 
     position: relative;
     color: #000;
@@ -232,20 +232,20 @@ a {text-decoration: none;}
     margin: 0 auto;
     background: #fff url(../images/weather/sun.svg) no-repeat 15% center/ 180px;
   }
-  .weatherInfo > .weather > h4 {
+  .weather-info > .weather > h4 {
     position: absolute;
     left: 65%;
     top: 50%;
     transform: translate(0, -50%);
     font-size: 35px;
   }
-  .weatherInfo > .weather > h4:first-child {
+  .weather-info > .weather > h4:first-child {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 16px;
     top: 25%;
     transform: translate(0, -25%);
   }
-  .weatherInfo > .weather > p {
+  .weather-info > .weather > p {
     position: absolute;
     left: 65%;
     bottom: 15%;
@@ -253,18 +253,18 @@ a {text-decoration: none;}
   }
 
   /* 미세먼지 */
-  .pmInfo {
+  .pm-info {
     min-width: 180px;
     height: 250px;
     text-align: center;
   }
-  .pmInfo > h3 {
+  .pm-info > h3 {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 25px;
     color: #fff;
     margin: 15px 0;
   }
-  .pmInfo > .pm {
+  .pm-info > .pm {
     border-radius: 25px; 
     position: relative;
     color: #000;
@@ -274,14 +274,14 @@ a {text-decoration: none;}
     margin: 0 auto;
     background: #fff url(../images/emoji/very-good-black.svg) no-repeat 25% center/ 120px ;
   }
-  .pmInfo > .pm > h4 {
+  .pm-info > .pm > h4 {
     position: absolute;
     left: 65%;
     top: 30%;
     transform: translate(0, -30%);
     font-size: 35px;
   }
-  .pmInfo > .pm > p {
+  .pm-info > .pm > p {
     position: absolute;
     left: 65%;
     bottom: 20%;
