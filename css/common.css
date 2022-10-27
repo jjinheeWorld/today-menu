@@ -182,4 +182,118 @@ a {text-decoration: none;}
 }
 /* 990~ */
 @media screen and (min-width: 990px) {
+  body {
+    background-color: #6472F0;
+  }
+
+  .wrap {
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 5%;
+  }
+
+  /* 위치 */
+  .locationName {
+    border-radius: 25px; 
+  }
+  .locationName > h2 {
+    font-size: 18px;
+  }
+
+  /* 날씨 & 미세먼지 */
+  .locationInfo {
+    display: flex;
+  }
+
+  /* 날씨 */
+  .weatherInfo {
+    min-width: 180px;
+    height: 250px;
+    margin-right: 5%;
+    text-align: center;
+  }
+  .weatherInfo > h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 25px;
+    color: #fff;
+    margin: 15px 0;
+  }
+  .weatherInfo > .weather {
+    border-radius: 25px; 
+    position: relative;
+    color: #000;
+    text-align: right;
+    height: 150px;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff url(../images/weather/sun.svg) no-repeat 15% center/ 180px;
+  }
+  .weatherInfo > .weather > h4 {
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 35px;
+  }
+  .weatherInfo > .weather > h4:first-child {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 16px;
+    top: 25%;
+    transform: translate(0, -25%);
+  }
+  .weatherInfo > .weather > p {
+    position: absolute;
+    left: 65%;
+    bottom: 15%;
+    transform: translate(0, -15%);
+  }
+
+  /* 미세먼지 */
+  .pmInfo {
+    min-width: 180px;
+    height: 250px;
+    text-align: center;
+  }
+  .pmInfo > h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 25px;
+    color: #fff;
+    margin: 15px 0;
+  }
+  .pmInfo > .pm {
+    border-radius: 25px; 
+    position: relative;
+    color: #000;
+    text-align: right;
+    height: 150px;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff url(../images/emoji/very-good-black.svg) no-repeat 25% center/ 120px ;
+  }
+  .pmInfo > .pm > h4 {
+    position: absolute;
+    left: 65%;
+    top: 30%;
+    transform: translate(0, -30%);
+    font-size: 35px;
+  }
+  .pmInfo > .pm > p {
+    position: absolute;
+    left: 65%;
+    bottom: 20%;
+    transform: translate(0, -20%);
+  }
+
+  /* 메뉴 추천 */
+  .today-menu {
+    width: 100%;
+    margin: 0;
+  }
+  .today-menu > button {
+    width: 70%;
+  }
 }
