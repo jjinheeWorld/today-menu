@@ -43,22 +43,25 @@ a {text-decoration: none;}
   color: #fff;
   text-align: right;
   height: 180px;
-  background: url(../images/weather/sun.svg) no-repeat 15% center/ 180px;
+  background: no-repeat 15% center/ 180px;
 }
 .weather-info > .weather > h4 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 16px;
+  position: absolute;
+  left: 65%;
+  top: 30%;
+  transform: translate(0, -30%);
+}
+.weather-info > .weather > .weather-temp {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 35px;
   position: absolute;
   left: 65%;
   top: 50%;
   transform: translate(0, -50%);
-  font-size: 35px;
 }
-.weather-info > .weather > h4:first-child {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 16px;
-  top: 30%;
-  transform: translate(0, -30%);
-}
-.weather-info > .weather > p {
+.weather-info > .weather > .weather-pty {
   position: absolute;
   left: 65%;
   bottom: 20%;
@@ -82,16 +85,16 @@ a {text-decoration: none;}
   color: #fff;
   text-align: right;
   height: 180px;
-  background: url(../images/emoji/very-good.svg) no-repeat 25% center/ 120px ;
+  background: no-repeat 25% center/ 120px ;
 }
-.pm-info > .pm > h4 {
+.pm-info > .pm > .pm-grade {
   position: absolute;
   left: 65%;
   top: 35%;
   transform: translate(0, -35%);
   font-size: 35px;
 }
-.pm-info > .pm > p {
+.pm-info > .pm > .pm-value {
   position: absolute;
   left: 65%;
   bottom: 25%;
@@ -151,7 +154,7 @@ a {text-decoration: none;}
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 110;
-  background: url(../images/etc/web-browser-design.svg) no-repeat center / 400px;
+  background: no-repeat center / 400px;
 }
 .pick-menu > .pick-menu-img {
   border-radius: 50%;
@@ -277,22 +280,25 @@ a {text-decoration: none;}
     height: 150px;
     width: 80%;
     margin: 0 auto;
-    background: #fff url(../images/weather/sun.svg) no-repeat 15% center/ 180px;
+    background: #fff no-repeat 15% center/ 180px;
   }
   .weather-info > .weather > h4 {
-    position: absolute;
-    left: 65%;
-    top: 50%;
-    transform: translate(0, -50%);
-    font-size: 35px;
-  }
-  .weather-info > .weather > h4:first-child {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 16px;
+    position: absolute;
+    left: 65%;
     top: 25%;
     transform: translate(0, -25%);
   }
-  .weather-info > .weather > p {
+  .weather-info > .weather > .weather-temp {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 35px;
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translate(0, -50%);  
+  }
+  .weather-info > .weather > .weather-pty {
     position: absolute;
     left: 65%;
     bottom: 15%;
@@ -319,16 +325,16 @@ a {text-decoration: none;}
     height: 150px;
     width: 80%;
     margin: 0 auto;
-    background: #fff url(../images/emoji/very-good-black.svg) no-repeat 25% center/ 120px ;
+    background: #fff no-repeat 25% center/ 120px ;
   }
-  .pm-info > .pm > h4 {
+  .pm-info > .pm > .pm-grade {
     position: absolute;
     left: 65%;
     top: 30%;
     transform: translate(0, -30%);
     font-size: 35px;
   }
-  .pm-info > .pm > p {
+  .pm-info > .pm > .pm-value {
     position: absolute;
     left: 65%;
     bottom: 20%;
