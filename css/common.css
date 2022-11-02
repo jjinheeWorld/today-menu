@@ -147,34 +147,32 @@ a {text-decoration: none;}
 }
 .pick-menu {
   display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 110;
-  background: no-repeat center / 400px;
-}
-.pick-menu > .pick-menu-img {
   border-radius: 50%;
   position: fixed;
   width: 250px;
   height: 250px;
   left: 50%;
-  top: 42%;
-  transform: translate(-50%, -42%);
+  top: 35%;
+  transform: translate(-50%, -35%);
+  z-index: 110;
+  background: no-repeat center / 400px;
+}
+.pick-menu > .pick-menu-img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
 }
 .pick-menu > .pick-menu-name {
   font-family: 'Nanum Myeongjo', serif;
   font-size: 30px;
+  color: #fff;
   position: fixed;
   left: 50%;
-  bottom: 22%;
-  transform: translate(-50%, -22%);
+  bottom: -50%;
+  transform: translate(-50%, 50%);
 }
 
-.pick-menu-lightbox.on {
+.today-menu-lightbox.on {
   display: block;
 }
 .pick-menu.on {
