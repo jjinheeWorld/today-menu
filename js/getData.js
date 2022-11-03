@@ -2,7 +2,7 @@
 export function getWeather() {
   // 날씨 정보 API
   const weatherResult = fetch(
-    'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=cbKPAKuWx1NutItr9hyyQeTi1Sx%2BBmKYKNE2khzyNrvHABB0vA7hVL8dV1X3zJFT3X3jpUMmihKQ4d%2FQlqaQZA%3D%3D&numOfRows=10&pageNo=1&dataType=JSON&base_date=20221102&base_time=0800&nx=62&ny=123'
+    'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=cbKPAKuWx1NutItr9hyyQeTi1Sx%2BBmKYKNE2khzyNrvHABB0vA7hVL8dV1X3zJFT3X3jpUMmihKQ4d%2FQlqaQZA%3D%3D&numOfRows=10&pageNo=1&dataType=JSON&base_date=20221103&base_time=0800&nx=62&ny=123'
   )
     .then((response) => response.json())
     .then(getWeatherData);
