@@ -33,19 +33,23 @@ export function getWeather() {
     function viewWeatherImg(tmp) {
       const weatherInfo = document.querySelector('.weather-pty');
       const weatherImg = document.querySelector('.weather');
+      const weatherBCKRColor = document.querySelector('.weather-info');
 
       weatherDataItems.forEach((weatherData) => {
         const pty = weatherData.fcstValue;
+
         if (weatherData.category === 'PTY') {
           if (pty == 1) {
             weatherInfo.textContent = '비';
             weatherImg.style.backgroundImage = `url(../images/weather/rain.svg)`; // 비
+            weatherBCKRColor.style.backgroundColor = '#A2A8B0';
           } else if (pty == 2) {
             console.log('비/눈');
             if (tmp > 0) {
               // tmp가 0°C보다 높으면 비
               weatherInfo.textContent = '비';
               weatherImg.style.backgroundImage = `url(../images/weather/rain.svg)`;
+              weatherBCKRColor.style.backgroundColor = '#A2A8B0';
             } else {
               // tmp가 0°C보다 낮으면 눈
               weatherInfo.textContent = '눈';
@@ -57,6 +61,7 @@ export function getWeather() {
           } else if (pty == 4) {
             weatherInfo.textContent = '소나기';
             weatherImg.style.backgroundImage = `url(../images/weather/rain.svg)`; // 소나기
+            weatherBCKRColor.style.backgroundColor = '#A2A8B0';
           } else {
             weatherInfo.textContent = '맑음';
             weatherImg.style.backgroundImage = `url(../images/weather/sun.svg)`; // 맑음
@@ -91,6 +96,7 @@ export function getPM() {
     const pMImg = document.querySelector('.pm');
     const pMGrade = document.querySelector('.pm-grade');
     const pMValue = document.querySelector('.pm-value');
+    const pMBCKRColor = document.querySelector('.pm-info');
 
     // resize될 때 마다 이미지 색상 변경
     window.addEventListener('resize', viewPMImg);
@@ -103,12 +109,16 @@ export function getPM() {
     function viewPMGrade() {
       if (updatePMData.pm10Grade1h == 1) {
         pMGrade.textContent = '좋음';
+        pMBCKRColor.style.backgroundColor = '#367CE4';
       } else if (updatePMData.pm10Grade1h == 2) {
         pMGrade.textContent = '보통';
+        pMBCKRColor.style.backgroundColor = '#07A3BE';
       } else if (updatePMData.pm10Grade1h == 3) {
         pMGrade.textContent = '나쁨';
+        pMBCKRColor.style.backgroundColor = '#F47F30';
       } else {
         pMGrade.textContent = '매우나쁨';
+        pMBCKRColor.style.backgroundColor = '#E7582D';
       }
     }
     // viewPMImg 함수에서 사용하기 위해 pMGrade.textContent 값을 변수에 담는다.
